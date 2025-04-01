@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Dancing Script", cursive;
+    font-weight: 800;
+    background-color: #000000;
+    color: white;
+  }
+  header {
+    background-color: aqua;
+  }
+  #about {
+  height: 200px;
+  }
+  #process {
+  height: 200px;
+  }
+  #portfolio {
+  height: 200px;
+  }
+  #form {
+  height: 200px;
+  }
+  header nav {
+    display: flex;
+    margin: 20px 0 0 0;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 8px 4px #0000002e;
+    background-color: #00000033;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  header nav a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  }
+  
+  /* Стили для слайдера */
+  #slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slide-img {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Слайд начинается справа */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;  /* Скрыты все слайды по умолчанию */
+    transition: opacity 0.5s ease-in-out, left 0.5s ease-in-out;
+  }
+  
+  /* Слайд с классом active будет видим */
+  .slide-img.active {
+    opacity: 1;
+    left: 0; /* Перемещаем активный слайд в центр */
+  }
+  
+  /* Кнопки для переключения слайдов */
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  form input::placeholder {
+  text-align: center;
+  }
+  
+  /* popUp */
+  #popUp{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000099;
+  }
+  
+  .container{
+    margin: 20px;
+    padding: 20px;
+  }
+  span {
+    font-size: 24px;
+  }
+  
+  @media (max-width: 1000px) {
+    .container {
+      margin: 12px;
+      padding: 6px;
+      }
+    span{
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 860px) {
+    .container{
+      margin: 20px;
+      padding: 10px;
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+#info {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    text-align: center;
+}
+
+#info h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00ffff;
+}
+
+#info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00ffff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#info a:hover {
+    background-color: #008b8b;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML</title>
+        <meta name="description" content="Пример задания">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- defer загрузит JS-файл только после загрузки body -->
+        <script defer src="script.js"></script>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        </style>
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img src="prew.png"><h1> OnlineGram - Отличные онлайн курсы </h1>
+            <nav>
+                <a href="#about">Почему нас выбирают</a>
+                <a href="#process">Как мы работаем</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#form">Заказать</a>
+            </nav>
+        </header>
+        <main>
+            <div id="slider">
+                <div class="slide-img" style="background-image: url('Cat2.jpg')">
+                </div>
+                <div class="slide-img" style="background-image: url('Cat3.jpg')">
+                </div>
+                <div class="slide-img" style="background-image: url('Cat1.jpg')">
+                </div>
+            
+                <!-- Кнопки для навигации -->
+                <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+                <label for='formName'>
+                    <span id='nameMessage'></span>
+                    <input id='formName' type="text" placeholder="Ваше имя">
+                </label><br>
+                <label for='formPhone'>
+                    <span id='phoneMessage'></span>
+                    <input id="formPhone" type="text" placeholder="Контактный телефон">
+                </label><br>
+                <label for="formAgreement">
+                    <span id="agreementMessage"></span>
+                    <input id='formAgreement' type="checkbox" checked>
+                    Согласен на обработку переданных контактных данных
+                </label><br>
+            </form>
+            <button id="formButton">ОТПРАВИТЬ</button>
+            <div id='popUp'>
+                <div>
+                    <p class="big">Ваши данные отправлены!</p>
+                    <p class="small">Кликните по экрану что бы закрыть это уведомление</p>
+                </div>
+            </div>
+            <section id='about'>
+                <h2>Почему нас выбирают</h2>
+            </section>
+            <section id='process'>
+                <h2>Как мы работаем</h2>
+            </section>
+            <section id='portfolio'>
+                <h2>Портфолио</h2>
+            </section>
+            <section id='form'>
+                <h2>Заказать</h2>
+            </section>
+            <section id="info">
+                <h2>О сайте</h2>
+                <p>Наш сайт предлагает лучшие онлайн курсы для вашего профессионального и личностного роста. Мы предоставляем качественные материалы, удобный интерфейс и поддержку на каждом этапе обучения.</p>
+                <ul>
+                    <li>Доступ к курсам 24/7</li>
+                    <li>Опытные преподаватели</li>
+                    <li>Сертификаты по окончании</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
